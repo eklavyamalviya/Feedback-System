@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+/*              footer                 */
+.list{
+  text-align: center;
+  padding: 24px;
+}
+
+.ic{
+  margin-right: 48px;
+   
+}
+.footer{
+ 
+  background-color: #9cc3D5FF;
+  
+}
+
+.fab {
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  transition: all .4s;
+}
+.fab:hover {
+    background-color: #333;
+    border:2px double #333;
+    opacity: .9;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+/*                      header                     */
+
+.header{
+  text-align: center;
+  height:auto;
+  width:auto;
+
+}
+.btn{
+width:auto;
+margin-bottom:2px;
+}
+
+.header{
+  text-align: center;
+
+}
+
+.subheader{
+	  line-height: 0.7px;
+}
+#my_image {
+    display: block;
+    max-width:auto ;
+    max-height:100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headtext{
+font-size:1.9vw;
+text-align: center;
+}
+.headtext2{
+font-size:1vw;
+text-align: center;
+}
+
+
+/*                      3 line menu                      */
+.sidenav {
+  height:auto;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding:2px 2px 2px 2px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right:200px;
+  font-size:30px;
+  margin-left:0px;
+}
+
+/*                         3 line menu               */
+
+/*              navigation bar                        */
+ul {
+  list-style-type: none;
+  background-color:#73D7FF;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float:right;
+}
+
+li a {
+  display: block;
+  font-size:20px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/*                navigation bar end                  */
+
+/*                      top bar for pc              */
+.leftcolumn{
+	text-align: center;
+}
+
+.uli{
+	display: inline-block;
+	text-align: center;
+}
+
+.btn{
+	float:right;
+	padding: 12px;
+    margin-right: 140px;
+}	
+/*                   top bar ende                  */   
+
+/*              combo box         */
+
+/*              combo box         */  
+/*              table               */
+table {
+   border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align:left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}   
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+/*              table end                   */
+
+/*           responsive tags DND            */
+
+@media screen and (max-width:800px){
+
+.leftcolumn{
+	display: none;
+}
+.ic{
+  margin-right: 12px;
+   
+}	
+.headtext{
+font-size:3.0vw;
+text-align: center;
+}
+.headtext2{
+font-size:2.0vw;
+text-align: center;
+}
+
+}
+
+@media screen and (min-width:799px){
+.sidenav {
+  height:0px;
+  width: 0px;
+  position:absolute;
+  background-color:black;
+  transition: 0.4s;
+}
+.navi{
+display: none;
+}
+
+}
+/*           responsive tags DND            */
+</style>
+
+
+
+<div class="navi">
+<span class="nav" style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+</head>
+<body>
+
+<div class="header" style="background-color:white;">
+   <img id ="my_image" src="{{ url_for('static',filename='logo1.png')}}">
+   <div class="subheader">
+   <h1 class="headtext">  Prestige Institute Of Engineering Management And Research </h1>
+   <h4 class="headtext2">Address: Prestige Vihar,Scheme No.74 C,Vijay Nagar Indore(M.P.)-452010</h4>
+  </div>
+ <marquee direction="left">PIEMR Proud of getting Accredited by NBA for B.Tech CSE and ECE < ENGG@PRESTIGE-PIEMR Recieved Endorsement for positive outcomes of quality teaching learning process , facilities and faculty contribution.Degree from PIEMR under RGPV will have worldwide acceptability as per Washington Accord.PIEMR is Best Private Engineering College in Madhya Pradesh.(Award for excellence in the field of education and entrepreneurship by "Integrated Chambers of Commerce and Industry")</marquee>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="shome">Home</a>
+  <a href="feedback">Feed Back</a>
+  <a href="pro">Profile</a>
+  <a href="logout">Log Out</a>
+</div>
+
+<div class="leftcolumn" style="background-color: #73D7FF;">
+<ul>
+  <li><a href="logout">Log Out</a></li>
+  <li><a href="pro">Profile</a></li>
+  <li><a href="feedback">Feedback</a></li>
+  <li><a href="shome">Home</a></li>
+</ul>
+</div>
+
+ 
+<div class="rightcolumn" style=" min-height:500px; height:auto;  width:100%;">
+	<br>
+  <div class="con" style="text-align:center;">
+    <br>
+    <center>
+      
+    <form action="http://localhost:5000/feed" method="POST">    
+    <div class="custom-select" style="width:200px;">
+  <select name="sel">
+    <option value="0" id="0">Select Sem:</option>
+    <option value="1" id="1">Sem {{ last }}</option>
+    <option value="2" id="2">Sem {{ last2 }}</option>
+  </select>
+  <button type="submit">Submit</button>
+</div>
+</div><br>
+</form>
+</center>
+<center>
+  	<table>
+         <tr>
+    <th>Subjects</th>
+    <th>Faculty</th>
+    <th>Feedback</th>
+  </tr>
+         
+            <tr>
+               <th>  </th>
+               <td>  </td>
+               <td> </td>
+            </tr>
+        
+      </table>
+    </center>
+      <br><br><br>
+ </div>
+ </center>
+  </div>
+
+<footer class="footer">
+  <div class="list">
+     <a class="ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        
+          <a class="ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+  </div>
+<h4 style="text-align: center; padding:12px; background-color:blue; margin:0px; color:white;"> ********@gmail.com</h4>
+</footer> 
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.margin="8px";
+  document.getElementById("mySidenav").style.width ="250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.margin="0px";
+}
+</script>   
+</body>
+</html> 

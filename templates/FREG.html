@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+/* Create two equal columns that floats next to each other */
+
+div.background {
+  background: url('klematis.jpg') repeat;
+  border: 2px solid black;
+}
+
+
+.sec{
+  text-align: center;
+  
+}
+.Lcolumn {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  
+  /*background-color: #C0C0C0 ;*/
+  height:400px; /* Should be removed. Only for demonstration */
+
+ }
+
+.Rcolumn {
+  float:left;
+  width: 50%;
+  padding: 10px;
+  background-color: #C0C0C0 ;
+  
+  height:400px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*                      header                     */
+
+.header{
+  text-align: center;
+  height:auto;
+  width:auto;
+  border: 2px solid black;
+
+}
+.btn{
+width:auto;
+margin-bottom:2px;
+}
+
+.header{
+  text-align: center;
+
+}
+
+.subheader{
+    line-height: 0.7px;
+}
+#my_image {
+    display: block;
+    max-width:auto ;
+    max-height:100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headtext{
+font-size:1.9vw;
+text-align: center;
+}
+.headtext2{
+font-size:1vw;
+text-align: center;
+}
+
+
+/*                      header  END                   */
+
+
+/*                      3 line menu                      */
+.sidenav {
+  height:auto;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top:30px;
+  padding-bottom:15px; 
+}
+
+.sidenav a {
+  padding:2px 2px 2px 2px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin-left:10px; 
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right:70px;
+  font-size:30px;
+  margin-left:10px;
+}
+
+/*                         3 line menu               */
+
+/*              navigation bar                        */
+ul {
+  list-style-type: none;
+  background-color:#73D7FF;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float:right;
+}
+
+li a {
+  display: block;
+  font-size:20px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:white;
+}
+/*                navigation bar end                  */
+
+/*                      top bar for pc              */
+.leftcolumn{
+  text-align: center;
+}
+
+.uli{
+  display: inline-block;
+  text-align: center;
+}
+
+.btn{
+  float:right;
+  padding: 12px;
+    margin-right: 140px;
+}
+/*                   top bar ende                  */  
+
+
+
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  
+}
+img.avatar {
+  width: 30%;
+  border-radius: 60%;
+}
+
+/*       */
+
+
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.lab{
+ padding-right:27%;
+}
+.lab1{
+  padding-right:26%; 
+}
+
+.row{
+  background-color: #A0DAA9;
+  text-align: center;"
+}
+
+
+
+
+
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+input[type=text1], select, textarea {
+  width: 78%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  opacity:0.5;
+}
+/*
+.lab{
+ padding-right:27%;
+}
+.lab1{
+  padding-right:26%; 
+}
+*/
+.row{
+  background-color: #A0DAA9;
+  text-align: center;"
+}
+
+
+
+/*              footer                 */
+.list{
+  text-align: center;
+  padding: 24px;
+}
+
+.ic{
+  margin-right: 48px;
+   
+}
+.footer{
+ 
+  background-color: #9cc3D5FF;
+  
+}
+
+.fab {
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  transition: all .4s;
+}
+.fab:hover {
+    background-color: #333;
+    border:2px double #333;
+    opacity: .9;
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 24px #fff;
+}
+
+
+
+@media screen and (max-width:800px){
+
+.leftcolumn{
+  display: none;
+}
+.ic{
+  margin-right: 12px;
+   
+} 
+.headtext{
+font-size:3.0vw;
+text-align: center;
+}
+.headtext2{
+font-size:2.0vw;
+text-align: center;
+}
+
+ .Lcolumn{
+  width:100%;
+  height: auto;
+ } 
+
+ .Rcolumn{
+  width:100%;
+  height:auto;
+ } 
+}
+
+
+@media screen and (min-width:799px){
+
+
+.sidenav {
+  height:0px;
+  width: 0px;
+  position:absolute;
+  background-color:black;
+  transition: 0.4s;
+}
+.navi{
+display: none;
+}
+
+}
+
+</style>
+<div class="navi">
+<span class="nav" style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+</head>
+<body>
+
+
+
+<!--                 HEADER                   -->
+
+<div class="header" style="background-color:white;">
+  <img id="my_image" src="{{url_for('static',filename = 'logo1.png')}}" >
+   <div class="subheader">
+   <h1 class="headtext">  Prestige Institute Of Engineering Management And Research </h1>
+   <h4 class="headtext2">Address: Prestige Vihar,Scheme No.74 C,Vijay Nagar Indore(M.P.)-452010</h4>
+  </div>
+ <marquee direction="left">PIEMR Proud of getting Accredited by NBA for B.Tech CSE and ECE < ENGG@PRESTIGE-PIEMR Recieved Endorsement for positive outcomes of quality teaching learning process , facilities and faculty contribution.Degree from PIEMR under RGPV will have worldwide acceptability as per Washington Accord.PIEMR is Best Private Engineering College in Madhya Pradesh.(Award for excellence in the field of education and entrepreneurship by "Integrated Chambers of Commerce and Industry")</marquee>
+</div>
+
+
+<!--                 HEADER    END               -->
+
+<!----- NAVBAR --->
+
+
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="feedback.html">Feed Back</a>
+  <a href="pro.html">Profile</a>
+  <a href="#">Log Out</a>
+</div>
+
+<div class="leftcolumn" style="background-color: #73D7FF;">
+<ul>
+  <li><a class="active" href="#home">Log Out</a></li>
+  <li><a href="#news">Profile</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="home.html">Home</a></li>
+</ul>
+</div>
+
+<!----- NAVBAR --->
+<div class="background">
+<h2 style="text-align: center;">Registration</h2>
+<div class="row">
+  <center>
+  <div class="Rcolumn">
+    
+  <br><br>
+   
+   <form action="http://localhost:5000/spro" method="post">
+
+
+  <div class="mid">
+    <label for="fname">Name..  </label>
+    <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+
+    <label for="lname">Branch</label>
+    <input type="text" id="lname" name="lname" placeholder="Your branch.."><br>
+  
+    <label for="lname">Sem...</label>
+    <input type="text" id="lname" name="sem" placeholder="Your semester i.e. 1,2.."><br>
+    {% with messages = get_flashed_messages() %}  
+         {% if messages %}  
+               {% for message in messages %}  
+                    <p>{{ message }}</p>  
+               {% endfor %}  
+         {% endif %}  
+      {% endwith %}  
+    
+    <label for="lname">En.Roll.</label>
+    <input type="text1" id="lname" name="eid" placeholder="Your Enrollment Number.."><br><br>
+    
+   
+  </div>
+ 
+
+  
+  </div>
+  
+
+     
+
+     <div class="Lcolumn" style="background-color:#bbb;">
+          <div class="image">
+                <div class="imgcontainer">
+                      <img alt="Avatar" class="avatar" src="{{url_for('static',filename = 'avatar.png')}}" ><br>
+
+                      <input type="file" id="change picture" name="photu">
+                </div>
+          </div> 
+          
+     </div>
+      <input type="submit" value="Submit" class="sub">
+  </form>
+ </div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.margin="0";
+  document.getElementById("mySidenav").style.width ="100px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.margin="0px";
+}
+</script>   
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<footer class="footer">
+  <div class="list">
+     <a class="ic">
+            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+        
+          <a class="ic">
+            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+         
+          <a class="ic">
+            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+  </div>
+<h4 style="text-align: center; padding:12px; background-color:blue; margin:0px; color:white;"> ********@gmail.com</h4>
+</footer>
+
+</body>
+</html>
